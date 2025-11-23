@@ -3,7 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import webhookRoutes from "./routes/webhook.js";
+import webhookRoutes from "../routes/webhook.js";
 import messageRoutes from "./routes/messages.js";
 import timelineRoutes from "./routes/timeline.js";
 import branchRoutes from "./routes/branches.js";
