@@ -1,8 +1,10 @@
 import express from "express";
-import { saveIncomingMessage } from "../controllers/messageController.js";
-
 const router = express.Router();
 
-router.post("/incoming", saveIncomingMessage);
+// POST /webhook
+router.post("/", (req, res) => {
+  console.log("Webhook hit:", req.body);
+  res.json({ status: "Webhook received" });
+});
 
 export default router;
